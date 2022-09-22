@@ -30,13 +30,6 @@ public class CharCounter {
 
 	private static Map<Character, Integer> buildCharCounterMap(String inputString) {
 
-//		List<Character> chars = new ArrayList<>();
-//		for (Character character : inputString.toCharArray()) {
-//			chars.add(character);
-//		}
-//
-//		Set<Character> uniqueChars = new HashSet<>(chars);
-
 		Map<Character, Integer> charCounterMap = new HashMap<>();
 		
 		for (Character character : inputString.toCharArray()) {
@@ -50,16 +43,6 @@ public class CharCounter {
 			
 		}
 
-//		for (Character charInTheSet : uniqueChars) {
-//			Integer charCounter = 0;
-//			for (Character charInTheList : chars) {
-//				if (charInTheSet.equals(charInTheList)) {
-//					charCounter++;
-//				}
-//				charCounterMap.put(charInTheSet, charCounter);
-//
-//			}
-//		}
 		return charCounterMap;
 	}
 
