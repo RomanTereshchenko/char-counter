@@ -13,7 +13,7 @@ public class CharCounter {
 			String outputString = charCounterMapToString(buildCharCounterMap(inputString), inputString);
 			if (cacheMap.containsKey(inputString)) {
 				outputCountersList.add(
-						new StringBuilder(inputString + "\n" + cacheMap.get(inputString) + " Output taken from cache%br")
+						new StringBuilder(inputString + "\n" + cacheMap.get(inputString) + "Output taken from cache\n")
 								.toString());
 			} else {
 				outputCountersList
